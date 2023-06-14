@@ -21,7 +21,7 @@
 		<script type="text/javascript" src="js/array_test_2.js" defer></script>
 		<script type="text/javascript" src="js/login.js" defer></script>
 	</head>
-	 <body class="text-center">
+	 <body class="text-center" onload="init();">
     <br><br><br>
     <main class="form-signin">
        <form id="form_main">
@@ -35,11 +35,12 @@
           <label for="floatingPassword">Password</label>
         </div>
 
-        <div class="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember me
-          </label>
-        </div>
+		<div class="checkbox mb-3">
+			 <label>
+				<input type="checkbox" value="remember-me" id="idSaveCheck"> 아이디 기억
+			 </label>
+		</div>
+
         <button class="w-100 btn btn-lg btn-primary" onclick="login()" type="button">로그인하기</button>
         <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
           
